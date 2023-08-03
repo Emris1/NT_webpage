@@ -1,5 +1,5 @@
 const fs = require('fs');
-
+const addNumber = require('./mod3');
 var data = " ";
 
 fs.writeFile("newfile.txt", data, (err)=>{
@@ -8,3 +8,5 @@ fs.writeFile("newfile.txt", data, (err)=>{
     else
     console.log("done writing!")
 });
+
+addNumber(22, 15);
