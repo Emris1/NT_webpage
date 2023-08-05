@@ -1,5 +1,5 @@
 const fs = require('fs');
-const addNumber = require('./mod3');
+const mod2  = require('./mod2');
 var data = " ";
 
 fs.writeFile("newfile.txt", data, (err)=>{
@@ -9,4 +9,12 @@ fs.writeFile("newfile.txt", data, (err)=>{
     console.log("done writing!")
 });
 
-addNumber(22, 15);
+
+
+var Nehemiah = new mod2.customer("nehemiah", 29, "Arima");
+Nehemiah.printStatement();
+
+
+var patatoes = new mod2.groceryItem("patatoes", 200, 500, 2000);
+patatoes.printStatement();
+
